@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Blog Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Task 1: Header -->
+  <header id="home">
+    <h1>My Blog Website</h1>
+    <p class="tagline">Simple stories, helpful tips, and updates.</p>
+  </header>
+
+  <!-- Task 1: Navigation with 3 internal links -->
+  <nav aria-label="Primary navigation">
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Task 1: Main with 2 articles + contact section -->
+  <main id="blog">
+    <div class="container fade-in">
+      <div class="content">
+        <!-- Article 1 -->
+        <article class="post">
+          <h2>Post One: Starting Strong</h2>
+          <p>
+            Welcome to my blog! This is a sample post to demonstrate semantic HTML structure and styling.
+            The layout will adjust based on screen size using Flexbox and media queries.
+          </p>
+          <p>
+            As you explore, notice the smooth hover effects, clean spacing, and fade-in animation that helps
+            the page feel more interactive and modern.
+          </p>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="post">
+          <h2>Post Two: Responsive Design Matters</h2>
+          <p>
+            Responsive design ensures your website looks great on phones, tablets, and desktops. In this project,
+            the blog posts stack vertically on small screens and sit side-by-side on larger screens.
+          </p>
+          <p>
+            The contact form is also designed to scale smoothly across devices, with focus and hover transitions
+            to improve usability and accessibility.
+          </p>
+        </article>
+      </div>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p class="contact-note">
+          Have a question or want to connect? Send a message using the form below.
+        </p>
+
+        <!-- Task 2: Contact Form -->
+        <form class="contact-form" action="#" method="post">
+          <div class="form-row">
+            <label for="name">Name <span class="req">*</span></label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email <span class="req">*</span></label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message <span class="req">*</span></label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- Task 1: Footer with studentID + copyright symbol -->
+  <footer>
+    <p>StudentID: YOUR_STUDENT_ID &copy; 2026</p>
+  </footer>
+</body>
+</html>
